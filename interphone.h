@@ -57,6 +57,9 @@ typedef int32_t  s32;
 #define IP_ENCODER_B		(A4)
 #define IP_ENCODER_KEY		(A3)
 
+#define IP_ENCODER_PINA		(PINC&0x10)
+#define IP_ENCODER_PINB		(PINC&0x20)
+
 class INTERPHONE{
 public:
     INTERPHONE(void);

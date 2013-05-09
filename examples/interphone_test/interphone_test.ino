@@ -42,6 +42,7 @@ void setup(void)
 
 void loop(void)
 {
+  uint8_t dir;
   /** nixie tube blink control and print received packet */
   phone.sta_handle();
   
@@ -55,7 +56,8 @@ void loop(void)
   }
   
   /** rotary encoder handle */
-  if(phone.scan_encoder()==1){
+  dir = phone.scan_encoder();
+  if(dir==1){
     phone.blink_ctl(true);
     Serial.write("DIR1\r\n");
     channel++;
@@ -63,7 +65,7 @@ void loop(void)
       channel = 0;
     }
     phone.write(channel);
-  }else if(phone.scan_encoder()==2){
+  }else if(dir==2){
     phone.blink_ctl(true);
     Serial.write("DIR2\r\n");
     channel--;
