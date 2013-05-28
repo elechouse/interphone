@@ -175,13 +175,12 @@ void INTERPHONE::begin(void)
 
 	pinMode(IP_PD, OUTPUT);
 
-	digitalWrite(IP_ENCODER_A, HIGH);
-	digitalWrite(IP_ENCODER_B, HIGH);
-	digitalWrite(IP_ENCODER_KEY, HIGH);
 	pinMode(IP_ENCODER_A, INPUT);
 	pinMode(IP_ENCODER_B, INPUT);
 	pinMode(IP_ENCODER_KEY, INPUT);
-
+	digitalWrite(IP_ENCODER_A, HIGH);
+	digitalWrite(IP_ENCODER_B, HIGH);
+	digitalWrite(IP_ENCODER_KEY, HIGH);
 
 	// *digitalPinToPCICR(IP_ENCODER_A) |= _BV(digitalPinToPCICRbit(IP_ENCODER_A));
 	// *digitalPinToPCMSK(IP_ENCODER_A) |= _BV(digitalPinToPCMSKbit(IP_ENCODER_A));
