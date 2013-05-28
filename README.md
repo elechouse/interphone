@@ -8,7 +8,7 @@ This is a library for ArduinoInterphoneShield from [Elechouse](http://www.elecho
 Hardware
 --------
 <!-- add picture here -->
-Buy from here: http://www.elechouse.com/elechouse/index.php?main_page=product_info&cPath=90_92&products_id=2231
+[Buy from here](http://www.elechouse.com/elechouse/index.php?main_page=product_info&cPath=90_92&products_id=2231)
 
 Software
 --------
