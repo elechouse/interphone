@@ -22,7 +22,7 @@
 #endif
 #include <avr/pgmspace.h>
 
-#include <SoftwareSerial.h>
+#include <utility/SoftwareSerial.h>
 
 #ifndef __TYPE_REDEFINE
 #define __TYPE_REDEFINE
